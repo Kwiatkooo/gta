@@ -1,0 +1,356 @@
+<meta>
+    <info author="KukiX" type="gamemode" name="PlayDM" version="0.5.2"/>
+	<config src="__xml/codes.xml" type="server"/>
+	
+    <aclrequest>
+		<right name="function.addAccount" access="true"/>
+	    <right name="function.startResource" access="true"/>
+	    <right name="function.stopResource" access="true"/>
+	    <right name="function.setPlayerMuted" access="true"/>
+		<right name="function.kickPlayer" access="true"/>
+		<right name="function.banPlayer" access="true"/>
+		<right name="function.executeCommandHandler" access="true"/>
+    </aclrequest>
+	
+	<map src="__maps/wg-linux.map"/>
+	<map src="__maps/wg-eagle.map"/>
+	<map src="__maps/wg-motor.map"/>
+	<map src="__maps/wg-qwerty.map"/>
+	<map src="__maps/wg-strike.map"/>
+	<map src="__maps/wg-ubuntu.map"/>
+	<map src="__maps/wg-wars.map"/>
+	<map src="__maps/wg-sand.map"/>
+	<map src="__maps/wg-aim_map.map"/>
+	<map src="__maps/wg-mini_strike.map"/>
+	<map src="__maps/sth-linux.map"/>
+	<map src="__maps/sth-eagle.map"/>
+	<map src="__maps/sth-motor.map"/>
+	<map src="__maps/sth-qwerty.map"/>
+	<map src="__maps/sth-strike.map"/>
+	<map src="__maps/sth-ubuntu.map"/>
+	<map src="__maps/sth-wars.map"/>
+	<map src="__maps/sth-sand.map"/>
+	<map src="__maps/sth-aim_map.map"/>
+	<map src="__maps/sth-mini_strike.map"/>
+	<map src="__maps/garages.map"/>
+	<map src="__maps/vehicles.map"/>
+	<map src="__maps/stuntpark.map"/>
+	<!--map src="__maps/las_venturas.map"/-->
+	<!--map src="__maps/san_fierro.map"/-->
+	<!--map src="__maps/ronda.map"/-->
+	
+    <script src="__client/main_c.lua" type="client" cache="false"/>
+	<script src="__client/hud_c.lua" type="client" cache="false"/>
+	<script src="__client/admin_c.lua" type="client" cache="false"/>
+	<script src="__client/gunshop_c.lua" type="client" cache="false"/>
+	<script src="__client/logowanie_c.lua" type="client" cache="false"/>
+	<script src="__client/minigames_c.lua" type="client" cache="false"/>
+	<script src="__client/bank_c.lua" type="client" cache="false"/>
+	<script src="__client/business_c.lua" type="client" cache="false"/>
+	
+	<script src="main.lua" type="server"/>
+	<script src="admin.lua" type="server"/>
+	<script src="gunshop.lua" type="server"/>
+	<script src="idsystem.lua" type="server"/>
+	<script src="logowanie.lua" type="server"/>
+	<script src="minigames.lua" type="server"/>
+	<script src="bank.lua" type="server"/>
+	<script src="business.lua" type="server"/>
+	
+	<script src="__modes/drift_c.lua" type="client" cache="false"/>
+	<script src="__modes/drift.lua" type="server"/>
+	<script src="__modes/hay_c.lua" type="client" cache="false"/>
+	<script src="__modes/hay.lua" type="server"/>
+	<script src="__modes/monstercrash_c.lua" type="client" cache="false"/>
+	<script src="__modes/monstercrash.lua" type="server"/>
+	<script src="__modes/oneshoot_c.lua" type="client" cache="false"/>
+	<script src="__modes/oneshoot.lua" type="server"/>
+	<script src="__modes/race_c.lua" type="client" cache="false"/>
+	<script src="__modes/race.lua" type="server"/>
+	<script src="__modes/derby_c.lua" type="client" cache="false"/>
+	<script src="__modes/derby.lua" type="server"/>
+	<script src="__modes/gang_war.lua" type="server"/>
+	<script src="__modes/fallout_c.lua" type="client" cache="false"/>
+	<script src="__modes/fallout.lua" type="server"/>
+	
+	<file src="__fonts/capture_it.ttf"/>
+	<file src="__sounds/level_up.mp3"/>
+	<file src="__sounds/click_confirm.ogg"/>
+	<file src="__sounds/intro.ogg"/>
+	<file src="__images/intro.png"/>
+	<file src="__images/hud.png"/>
+	<file src="__images/login.png"/>
+	<file src="__images/save.png"/>
+	<file src="__images/lock.png"/>
+	<file src="__images/cancel.png"/>
+	<file src="__images/clock.png"/>
+	<file src="__images/delete.png"/>
+	<file src="__images/faq.png"/>
+	<file src="__images/home.png"/>
+	<file src="__images/ok.png"/>
+	<file src="__images/setting.png"/>
+	<file src="__images/unlock.png"/>
+	<file src="__images/user.png"/>
+	<file src="__images/radar.png"/>
+	<file src="__images/radar2.png"/>
+	<file src="__images/bg.png"/>
+
+
+	<file src="__mods/nrg500.dff" download="false"/>
+	<file src="__mods/nrg500.txd" download="false"/>
+	<file src="__mods/infernus.dff" download="false"/>
+	<file src="__mods/infernus.txd" download="false"/>
+	<file src="__mods/pcj600.dff" download="false"/>
+	<file src="__mods/pcj600.txd" download="false"/>
+	<file src="__mods/ak47.dff" download="false"/>
+	<file src="__mods/ak47.txd" download="false"/>
+	<file src="__mods/chromegun.dff" download="false"/>
+	<file src="__mods/chromegun.txd" download="false"/>
+	<file src="__mods/colt45.dff" download="false"/>
+	<file src="__mods/colt45.txd" download="false"/>
+	<file src="__mods/desert_eagle.dff" download="false"/>
+	<file src="__mods/desert_eagle.txd" download="false"/>
+	<file src="__mods/grenade.dff" download="false"/>
+	<file src="__mods/grenade.txd" download="false"/>
+	<file src="__mods/m4.dff" download="false"/>
+	<file src="__mods/m4.txd" download="false"/>
+	<file src="__mods/micro_uzi.dff" download="false"/>
+	<file src="__mods/micro_uzi.txd" download="false"/>
+	<file src="__mods/mp5lng.dff" download="false"/>
+	<file src="__mods/mp5lng.txd" download="false"/>
+	<file src="__mods/sawnoff.dff" download="false"/>
+	<file src="__mods/sawnoff.txd" download="false"/>
+	<file src="__mods/shotgspa.dff" download="false"/>
+	<file src="__mods/shotgspa.txd" download="false"/>
+	<file src="__mods/silenced.dff" download="false"/>
+	<file src="__mods/silenced.txd" download="false"/>
+	<file src="__mods/sniper.dff" download="false"/>
+	<file src="__mods/sniper.txd" download="false"/>
+	<file src="__mods/tec9.dff" download="false"/>
+	<file src="__mods/tec9.txd" download="false"/>
+	<file src="__mods/1.txd" download="false"/>
+	<file src="__mods/2.txd" download="false"/>
+	<file src="__mods/7.txd" download="false"/>
+	<file src="__mods/9.txd" download="false"/>
+	<file src="__mods/10.txd" download="false"/>
+	<file src="__mods/11.txd" download="false"/>
+	<file src="__mods/12.txd" download="false"/>
+	<file src="__mods/13.txd" download="false"/>
+	<file src="__mods/14.txd" download="false"/>
+	<file src="__mods/15.txd" download="false"/>
+	<file src="__mods/16.txd" download="false"/>
+	<file src="__mods/17.txd" download="false"/>
+	<file src="__mods/18.txd" download="false"/>
+	<file src="__mods/19.txd" download="false"/>
+	<file src="__mods/20.txd" download="false"/>
+	<!--file src="__mods/21.txd" download="false"/-->
+	<!--file src="__mods/22.txd" download="false"/-->
+	<file src="__mods/23.txd" download="false"/>
+	<file src="__mods/24.txd" download="false"/>
+	<file src="__mods/25.txd" download="false"/>
+	<file src="__mods/26.txd" download="false"/>
+	<file src="__mods/27.txd" download="false"/>
+	<file src="__mods/28.txd" download="false"/>
+	<!--file src="__mods/29.txd" download="false"/-->
+	<file src="__mods/30.txd" download="false"/>
+	<file src="__mods/31.txd" download="false"/>
+	<file src="__mods/32.txd" download="false"/>
+	<file src="__mods/33.txd" download="false"/>
+	<file src="__mods/34.txd" download="false"/>
+	<file src="__mods/35.txd" download="false"/>
+	<file src="__mods/36.txd" download="false"/>
+	<file src="__mods/37.txd" download="false"/>
+	<file src="__mods/39.txd" download="false"/>
+	<file src="__mods/43.txd" download="false"/>
+	<!--file src="__mods/44.txd" download="false"/-->
+	<file src="__mods/45.txd" download="false"/>
+	<file src="__mods/46.txd" download="false"/>
+	<file src="__mods/47.txd" download="false"/>
+	<file src="__mods/48.txd" download="false"/>
+	<file src="__mods/49.txd" download="false"/>
+	<file src="__mods/50.txd" download="false"/>
+	<file src="__mods/51.txd" download="false"/>
+	<file src="__mods/52.txd" download="false"/>
+	<file src="__mods/54.txd" download="false"/>
+	<file src="__mods/55.txd" download="false"/>
+	<file src="__mods/56.txd" download="false"/>
+	<file src="__mods/57.txd" download="false"/>
+	<file src="__mods/58.txd" download="false"/>
+	<file src="__mods/59.txd" download="false"/>
+	<file src="__mods/60.txd" download="false"/>
+	<file src="__mods/63.txd" download="false"/>
+	<file src="__mods/69.txd" download="false"/>
+	<file src="__mods/77.txd" download="false"/>
+	<file src="__mods/78.txd" download="false"/>
+	<file src="__mods/79.txd" download="false"/>
+	<!--file src="__mods/84.txd" download="false"/-->
+	<!--file src="__mods/85.txd" download="false"/-->
+	<!--file src="__mods/87.txd" download="false"/-->
+	<!--file src="__mods/94.txd" download="false"/-->
+	<file src="__mods/95.txd" download="false"/>
+	<file src="__mods/96.txd" download="false"/>
+	<file src="__mods/97.txd" download="false"/>
+	<file src="__mods/98.txd" download="false"/>
+	<file src="__mods/100.txd" download="false"/>
+	<file src="__mods/101.txd" download="false"/>
+	<file src="__mods/102.txd" download="false"/>
+	<file src="__mods/103.txd" download="false"/>
+	<file src="__mods/104.txd" download="false"/>
+	<file src="__mods/105.txd" download="false"/>
+	<file src="__mods/106.txd" download="false"/>
+	<file src="__mods/107.txd" download="false"/>
+	<file src="__mods/108.txd" download="false"/>
+	<file src="__mods/109.txd" download="false"/>
+	<file src="__mods/110.txd" download="false"/>
+	<file src="__mods/140.txd" download="false"/>
+	<!--file src="__mods/141.txd" download="false"/-->
+	<file src="__mods/142.txd" download="false"/>
+	<file src="__mods/143.txd" download="false"/>
+	<file src="__mods/163.txd" download="false"/>
+	<file src="__mods/260.txd" download="false"/>
+	<!--file src="__mods/274.txd" download="false"/-->
+	<!--file src="__mods/275.txd" download="false"/-->
+	<!--file src="__mods/276.txd" download="false"/-->
+	<file src="__mods/285.txd" download="false"/>
+
+	<file src="__mods/292.txd" download="false"/>
+	<file src="__mods/292.dff" download="false"/>
+
+	<file src="__mods/114.txd" download="false"/>
+	<file src="__mods/114.dff" download="false"/>
+
+	<file src="__mods/299.txd" download="false"/>
+	<file src="__mods/299.dff" download="false"/>
+
+	<file src="__mods/monster.txd" download="false"/>
+	<file src="__mods/monster.dff" download="false"/>
+
+	<file src="__mods/hydra.txd" download="false"/>
+	<file src="__mods/hydra.dff" download="false"/>
+
+
+
+	<file src="__mods/1.dff" download="false"/>
+	<file src="__mods/2.dff" download="false"/>
+	<file src="__mods/7.dff" download="false"/>
+	<file src="__mods/9.dff" download="false"/>
+	<file src="__mods/10.dff" download="false"/>
+	<file src="__mods/11.dff" download="false"/>
+	<file src="__mods/12.dff" download="false"/>
+	<file src="__mods/13.dff" download="false"/>
+	<file src="__mods/14.dff" download="false"/>
+	<file src="__mods/15.dff" download="false"/>
+	<file src="__mods/16.dff" download="false"/>
+	<file src="__mods/17.dff" download="false"/>
+	<file src="__mods/18.dff" download="false"/>
+	<file src="__mods/19.dff" download="false"/>
+	<file src="__mods/20.dff" download="false"/>
+	<!--file src="__mods/21.dff" download="false"/-->
+	<!--file src="__mods/22.dff" download="false"/-->
+	<file src="__mods/23.dff" download="false"/>
+	<file src="__mods/24.dff" download="false"/>
+	<file src="__mods/25.dff" download="false"/>
+	<file src="__mods/26.dff" download="false"/>
+	<file src="__mods/27.dff" download="false"/>
+	<file src="__mods/28.dff" download="false"/>
+	<!--file src="__mods/29.dff" download="false"/-->
+	<file src="__mods/30.dff" download="false"/>
+	<file src="__mods/31.dff" download="false"/>
+	<file src="__mods/32.dff" download="false"/>
+	<file src="__mods/33.dff" download="false"/>
+	<file src="__mods/34.dff" download="false"/>
+	<file src="__mods/35.dff" download="false"/>
+	<file src="__mods/36.dff" download="false"/>
+	<file src="__mods/37.dff" download="false"/>
+	<file src="__mods/39.dff" download="false"/>
+	<file src="__mods/43.dff" download="false"/>
+	<!--file src="__mods/44.dff" download="false"/-->
+	<file src="__mods/45.dff" download="false"/>
+	<file src="__mods/46.dff" download="false"/>
+	<file src="__mods/47.dff" download="false"/>
+	<file src="__mods/48.dff" download="false"/>
+	<file src="__mods/49.dff" download="false"/>
+	<file src="__mods/50.dff" download="false"/>
+	<file src="__mods/51.dff" download="false"/>
+	<file src="__mods/52.dff" download="false"/>
+	<file src="__mods/54.dff" download="false"/>
+	<file src="__mods/55.dff" download="false"/>
+	<file src="__mods/56.dff" download="false"/>
+	<file src="__mods/57.dff" download="false"/>
+	<file src="__mods/58.dff" download="false"/>
+	<file src="__mods/59.dff" download="false"/>
+	<file src="__mods/60.dff" download="false"/>
+	<file src="__mods/63.dff" download="false"/>
+	<file src="__mods/69.dff" download="false"/>
+	<file src="__mods/77.dff" download="false"/>
+	<file src="__mods/78.dff" download="false"/>
+	<file src="__mods/79.dff" download="false"/>
+	<!--file src="__mods/84.dff" download="false"/-->
+	<!--file src="__mods/85.dff" download="false"/-->
+	<!--file src="__mods/87.dff" download="false"/-->
+	<!--file src="__mods/94.dff" download="false"/-->
+	<file src="__mods/95.dff" download="false"/>
+	<file src="__mods/96.dff" download="false"/>
+	<file src="__mods/97.dff" download="false"/>
+	<file src="__mods/98.dff" download="false"/>
+	<file src="__mods/100.dff" download="false"/>
+	<file src="__mods/101.dff" download="false"/>
+	<file src="__mods/102.dff" download="false"/>
+	<file src="__mods/103.dff" download="false"/>
+	<file src="__mods/104.dff" download="false"/>
+	<file src="__mods/105.dff" download="false"/>
+	<file src="__mods/106.dff" download="false"/>
+	<file src="__mods/107.dff" download="false"/>
+	<file src="__mods/108.dff" download="false"/>
+	<file src="__mods/109.dff" download="false"/>
+	<file src="__mods/110.dff" download="false"/>
+	<file src="__mods/140.dff" download="false"/>
+	<!--file src="__mods/141.dff" download="false"/-->
+	<file src="__mods/142.dff" download="false"/>
+	<file src="__mods/143.dff" download="false"/>
+	<file src="__mods/163.dff" download="false"/>
+	<file src="__mods/260.dff" download="false"/>
+	<!--file src="__mods/274.dff" download="false"/-->
+	<!--file src="__mods/275.dff" download="false"/-->
+	<!--file src="__mods/276.dff" download="false"/-->
+	<file src="__mods/285.dff" download="false"/>
+	
+	
+
+	<export function="changePlayerPosition" type="client"/>
+	<export function="centerWindow" type="client"/>
+	<export function="removeHEXFromString" type="client"/>
+	<export function="hidePlayerCursor" type="client"/>
+	<export function="getPlayerByID" type="server"/>
+	<export function="getAccIDByName" type="server"/>
+	<export function="getAccNameByID" type="server"/>
+	<export function="getAccName" type="server"/>
+	<export function="getAccID" type="server"/>
+	<export function="isPlayerLogin" type="server"/>
+	<export function="isPlayerVIP" type="server"/>
+	<export function="isPlayerGotDamage" type="server"/>
+	<export function="isPlayerInJail" type="server"/>
+	<export function="isPlayerPlayMiniGame" type="server"/>
+	<export function="addPlayerEXP" type="server"/>
+	<export function="removePlayerEXP" type="server"/>
+	<export function="removeAccountEXP" type="server"/>
+	<export function="getAccountEXP" type="server"/>
+	<export function="getAccountLevel" type="server"/>
+	<export function="zapytanie" type="server"/>
+	<export function="pobierzWyniki" type="server"/>
+	<export function="pobierzTabeleWynikow" type="server"/>
+	
+	<!--include resource="defaultstats"/>
+	
+	<include resource="reload"/>
+	<include resource="parachute"/>
+	<include resource="ps_privcar"/>
+	<include resource="ps_gang_system"/>
+	<include resource="ps_house"/>
+	<include resource="ps_damagescript"/>
+	<include resource="ps_3dspeedo"/>
+	<include resource="ps_interiors"/>
+	<include resource="ps_mapnames"/-->
+	<include resource="ps_mass"/>
+	
+</meta>

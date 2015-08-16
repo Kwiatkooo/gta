@@ -1,0 +1,8 @@
+<meta>
+	<script src="privcar.lua" type="server"/>
+	<script src="privcar_c.lua" type="client" cache="false"/>
+	<export function="loadPlayerPrivCar" type="server"/>
+    <aclrequest>
+		<right name="function.executeCommandHandler" access="true"/>
+    </aclrequest>
+</meta>

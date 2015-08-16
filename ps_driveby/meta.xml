@@ -1,0 +1,4 @@
+<meta>
+<script src="driveby_c.lua" type="client"/>
+<script src="driveby.lua" type="server"/>
+</meta>

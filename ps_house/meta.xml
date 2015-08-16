@@ -1,0 +1,7 @@
+<meta>
+	<script src="house_system.lua" type="server"/>
+	<script src="house_system_c.lua" type="client" cache="false"/>
+    <aclrequest>
+		<right name="function.executeCommandHandler" access="true"/>
+    </aclrequest>
+</meta>

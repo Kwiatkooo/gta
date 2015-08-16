@@ -1,0 +1,8 @@
+<meta>
+	<info name="hud_messages" description="Hud messages" author="gless" version="1.0" type="script" />
+	<script src="server.lua" type="server" />
+	<script src="client.lua" type="client" />
+	<file src="bg.png"/>
+	<export function="showBox" />
+	<export function="showBox" type="client" />
+</meta>

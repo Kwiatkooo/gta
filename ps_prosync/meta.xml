@@ -1,0 +1,4 @@
+<meta>
+	<script src='prosync_c.lua' type='client' cache="false" />
+    <script src='prosync.lua' type='server' />
+</meta>

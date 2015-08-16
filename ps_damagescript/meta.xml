@@ -1,0 +1,5 @@
+<meta>
+    <info author="Luk4s7_" type="misc"/>
+	<script src="c_PlayerDamage.lua" type="client"/>
+	<script src="s_PlayerDamage.lua" type="server"/>
+</meta>

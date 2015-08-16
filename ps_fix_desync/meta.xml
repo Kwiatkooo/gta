@@ -1,0 +1,3 @@
+<meta>
+	<script src="fix_desync.lua" type="server"/>
+</meta>

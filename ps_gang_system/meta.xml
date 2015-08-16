@@ -1,0 +1,8 @@
+<meta>
+	<script src="gang.lua" type="server"/>
+	<script src="gang_c.lua" type="client" cache="false"/>
+	<export function="loadPlayerGang" type="server"/>
+    <aclrequest>
+		<right name="function.executeCommandHandler" access="true"/>
+    </aclrequest>
+</meta>
